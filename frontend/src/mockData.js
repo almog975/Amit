@@ -209,27 +209,33 @@ export const mockTestimonials = [
 ];
 
 export const mockAgent = {
-  name: "עמית",
+  name: "עמית וולף",
+  englishName: "Amit Wolf",
   title: {
-    en: "Premium Real Estate Agent",
-    he: "סוכן נדל\"ן מוביל"
+    en: "Real Estate Marketer",
+    he: "משווק נדל״ן"
   },
+  licenseNumber: "3245947",
   experience: {
-    en: "8+ Years Experience",
-    he: "מעל 8 שנות ניסיון"
+    en: "Licensed Professional",
+    he: "משווק מוסמך ומנוסה"
   },
   phone: "050-123-4567",
-  email: "amit@realestate.co.il",
+  email: "amit.wolf@realestate.co.il",
+  location: {
+    en: "Kiryat/Haifa Area",
+    he: "קריות / חיפה"
+  },
   bio: {
-    en: "Dedicated to helping families find their perfect home with personalized service and expert market knowledge.",
-    he: "מחויב לעזור למשפחות למצוא את הבית המושלם שלהן עם שירות אישי וידע מקצועי בשוק."
+    en: "Professional real estate marketer specializing in exclusive properties with personal guidance throughout the entire process.",
+    he: "משווק נדל״ן מקצועי המתמחה בנכסים בלעדיים עם ליווי אישי לאורך כל התהליך."
   },
   specialties: {
-    en: ["Luxury Homes", "First-Time Buyers", "Investment Properties", "Relocation Services"],
-    he: ["בתים יוקרתיים", "קונים ראשונים", "נכסי השקעה", "שירותי רילוקיישן"]
+    en: ["Rental Properties", "Property Sales", "Property Purchase", "Exclusive Properties", "Personal Guidance"],
+    he: ["השכרה", "מכירה", "קנייה", "נכסים בלעדיים", "ליווי אישי"]
   },
   achievements: {
-    en: ["Top 5% Agent", "100+ Satisfied Clients", "Excellence Award 2024"],
-    he: ["סוכן ב-5% העליונים", "מעל 100 לקוחות מרוצים", "פרס מצוינות 2024"]
+    en: ["Licensed Agent #3245947", "Kiryat & Haifa Specialist", "Exclusive Properties Expert"],
+    he: ["רישיון משווק מס' 3245947", "מומחה לאזור קריות וחיפה", "מתמחה בנכסים בלעדיים"]
   }
 };
