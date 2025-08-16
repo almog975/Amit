@@ -4,8 +4,12 @@ import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 import { Search, SlidersHorizontal } from 'lucide-react';
+import { translations } from '../i18n';
 
-const SearchFilters = ({ filters, onFiltersChange, onSearch, onClear }) => {
+const SearchFilters = ({ language, filters, onFiltersChange, onSearch, onClear }) => {
+  const t = (key) => translations[language][key] || key;
+  const isRTL = language === 'he';
+
   const handleFilterChange = (key, value) => {
     onFiltersChange({
       ...filters,
@@ -19,12 +23,12 @@ const SearchFilters = ({ filters, onFiltersChange, onSearch, onClear }) => {
         <div className="space-y-4">
           {/* Main Search Bar */}
           <div className="relative">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
+            <Search className={`absolute ${isRTL ? 'right-3' : 'left-3'} top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400`} />
             <Input
-              placeholder="Search by location, property type, or keyword..."
+              placeholder={t('Search by location, property type, or keyword...')}
               value={filters.search || ''}
               onChange={(e) => handleFilterChange('search', e.target.value)}
-              className="pl-10 h-12 text-base border-gray-200 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+              className={`${isRTL ? 'pr-10' : 'pl-10'} h-12 text-base border-gray-200 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500`}
             />
           </div>
 
@@ -33,23 +37,23 @@ const SearchFilters = ({ filters, onFiltersChange, onSearch, onClear }) => {
             {/* Property Type */}
             <Select value={filters.type || ''} onValueChange={(value) => handleFilterChange('type', value)}>
               <SelectTrigger className="h-12">
-                <SelectValue placeholder="Property Type" />
+                <SelectValue placeholder={t('Property Type')} />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="all">All Types</SelectItem>
-                <SelectItem value="house">House</SelectItem>
-                <SelectItem value="condo">Condo</SelectItem>
-                <SelectItem value="townhouse">Townhouse</SelectItem>
+                <SelectItem value="all">{t('All Types')}</SelectItem>
+                <SelectItem value="house">{t('House')}</SelectItem>
+                <SelectItem value="condo">{t('Condo')}</SelectItem>
+                <SelectItem value="townhouse">{t('Townhouse')}</SelectItem>
               </SelectContent>
             </Select>
 
             {/* Bedrooms */}
             <Select value={filters.bedrooms || ''} onValueChange={(value) => handleFilterChange('bedrooms', value)}>
               <SelectTrigger className="h-12">
-                <SelectValue placeholder="Bedrooms" />
+                <SelectValue placeholder={t('Bedrooms')} />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="any">Any</SelectItem>
+                <SelectItem value="any">{t('Any')}</SelectItem>
                 <SelectItem value="1">1+</SelectItem>
                 <SelectItem value="2">2+</SelectItem>
                 <SelectItem value="3">3+</SelectItem>
@@ -60,10 +64,10 @@ const SearchFilters = ({ filters, onFiltersChange, onSearch, onClear }) => {
             {/* Bathrooms */}
             <Select value={filters.bathrooms || ''} onValueChange={(value) => handleFilterChange('bathrooms', value)}>
               <SelectTrigger className="h-12">
-                <SelectValue placeholder="Bathrooms" />
+                <SelectValue placeholder={t('Bathrooms')} />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="any">Any</SelectItem>
+                <SelectItem value="any">{t('Any')}</SelectItem>
                 <SelectItem value="1">1+</SelectItem>
                 <SelectItem value="2">2+</SelectItem>
                 <SelectItem value="3">3+</SelectItem>
@@ -73,15 +77,15 @@ const SearchFilters = ({ filters, onFiltersChange, onSearch, onClear }) => {
             {/* Price Range */}
             <Select value={filters.priceRange || ''} onValueChange={(value) => handleFilterChange('priceRange', value)}>
               <SelectTrigger className="h-12">
-                <SelectValue placeholder="Price Range" />
+                <SelectValue placeholder={t('Price Range')} />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="any">Any Price</SelectItem>
-                <SelectItem value="0-300000">Under $300K</SelectItem>
-                <SelectItem value="300000-500000">$300K - $500K</SelectItem>
-                <SelectItem value="500000-750000">$500K - $750K</SelectItem>
-                <SelectItem value="750000-1000000">$750K - $1M</SelectItem>
-                <SelectItem value="1000000-999999999">$1M+</SelectItem>
+                <SelectItem value="any">{t('Any Price')}</SelectItem>
+                <SelectItem value="0-1500000">{t('Under $300K')}</SelectItem>
+                <SelectItem value="1500000-2500000">{t('$300K - $500K')}</SelectItem>
+                <SelectItem value="2500000-3500000">{t('$500K - $750K')}</SelectItem>
+                <SelectItem value="3500000-5000000">{t('$750K - $1M')}</SelectItem>
+                <SelectItem value="5000000-99999999">{t('$1M+')}</SelectItem>
               </SelectContent>
             </Select>
 
@@ -92,7 +96,7 @@ const SearchFilters = ({ filters, onFiltersChange, onSearch, onClear }) => {
                 className="flex-1 h-12 bg-emerald-600 hover:bg-emerald-700 text-white transition-colors"
               >
                 <Search className="h-4 w-4 mr-2" />
-                Search
+                {t('Search')}
               </Button>
               <Button 
                 onClick={onClear}
