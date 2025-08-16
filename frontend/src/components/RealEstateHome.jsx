@@ -139,7 +139,7 @@ const RealEstateHome = () => {
                   {mockAgent.experience[language]}
                 </Badge>
                 <h1 className="text-5xl font-bold text-gray-900 leading-tight">
-                  {t('Find Your Perfect Home with')} {mockAgent.name}
+                  {t('Find Your Perfect Home with')} {isRTL ? mockAgent.name : mockAgent.englishName}
                 </h1>
                 <p className="text-xl text-gray-600 mt-4">
                   {mockAgent.bio[language]}
