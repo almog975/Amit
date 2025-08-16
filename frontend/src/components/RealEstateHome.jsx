@@ -108,9 +108,11 @@ const RealEstateHome = () => {
               <Home className="h-8 w-8 text-emerald-600" />
               <div>
                 <h1 className="text-2xl font-bold text-gray-900">
-                  {isRTL ? 'עמית נדל"ן' : 'Amit Real Estate'}
+                  {isRTL ? 'עמית וולף | נדל"ן 🏡' : 'Amit Wolf | Real Estate 🏡'}
                 </h1>
-                <p className="text-sm text-gray-600">{t('Your Trusted Property Partner')}</p>
+                <p className="text-sm text-gray-600">
+                  {isRTL ? `קריות / חיפה • רישיון ${mockAgent.licenseNumber}` : `Kiryat/Haifa Area • License ${mockAgent.licenseNumber}`}
+                </p>
               </div>
             </div>
             <div className={`flex items-center space-x-6 ${isRTL ? 'space-x-reverse' : ''}`}>
