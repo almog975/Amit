@@ -43,19 +43,19 @@ const RealEstateHome = () => {
       );
     }
 
-    if (filters.type) {
+    if (filters.type && filters.type !== 'all') {
       filtered = filtered.filter(property => property.type === filters.type);
     }
 
-    if (filters.bedrooms) {
+    if (filters.bedrooms && filters.bedrooms !== 'any') {
       filtered = filtered.filter(property => property.bedrooms >= parseInt(filters.bedrooms));
     }
 
-    if (filters.bathrooms) {
+    if (filters.bathrooms && filters.bathrooms !== 'any') {
       filtered = filtered.filter(property => property.bathrooms >= parseInt(filters.bathrooms));
     }
 
-    if (filters.priceRange) {
+    if (filters.priceRange && filters.priceRange !== 'any') {
       const [min, max] = filters.priceRange.split('-').map(Number);
       filtered = filtered.filter(property => 
         property.price >= min && property.price <= max
