@@ -161,49 +161,49 @@ export const mockTestimonials = [
   {
     id: 1,
     name: {
-      en: "Sarah Cohen",
-      he: "שרה כהן"
+      en: "Rachel Mizrahi",
+      he: "רחל מזרחי"
     },
     text: {
-      en: "Amit helped us find our dream home! His expertise and dedication made the process smooth and stress-free.",
-      he: "עמית עזר לנו למצוא את בית החלומות שלנו! המקצועיות והמסירות שלו הפכו את התהליך לחלק וללא דאגות."
+      en: "Amit Wolf helped us find the perfect apartment in Kiryat Yam with amazing sea views! His professionalism and personal guidance made the entire process smooth.",
+      he: "עמית וולף עזר לנו למצוא את הדירה המושלמת בקרית ים עם נוף מדהים לים! המקצועיות והליווי האישי שלו הפכו את כל התהליך לחלק."
     },
     rating: 5,
     location: {
-      en: "Tel Aviv, Israel",
-      he: "תל אביב, ישראל"
+      en: "Kiryat Yam, Israel",
+      he: "קרית ים, ישראל"
     }
   },
   {
     id: 2,
     name: {
-      en: "Michael Levi",
-      he: "מיכאל לוי"
+      en: "David Cohen",
+      he: "דוד כהן"
     },
     text: {
-      en: "Professional, knowledgeable, and always available. Amit went above and beyond to get us the best deal.",
-      he: "מקצועי, בעל ידע, ותמיד זמין. עמית עשה הכל כדי להשיג לנו את העסקה הטובה ביותר."
+      en: "Excellent service from Amit! He knows the Haifa area like no one else and found us exclusive properties that weren't even advertised yet.",
+      he: "שירות מצוין מעמית! הוא מכיר את אזור חיפה כמו איש אחד ומצא לנו נכסים בלעדיים שאפילו לא פורסמו עדיין."
     },
     rating: 5,
     location: {
-      en: "Jerusalem, Israel",
-      he: "ירושלים, ישראל"
+      en: "Haifa, Israel",
+      he: "חיפה, ישראל"
     }
   },
   {
     id: 3,
     name: {
-      en: "Rachel Goldstein",
-      he: "רחל גולדשטיין"
+      en: "Sarah Levi",
+      he: "שרה לוי"
     },
     text: {
-      en: "Outstanding service! Amit's market knowledge and negotiation skills saved us thousands on our home purchase.",
-      he: "שירות מעולה! הידע השוק וכישורי המשא ומתן של עמית חסכו לנו אלפי שקלים ברכישת הבית."
+      en: "Professional, reliable, and always available. Amit's personal guidance throughout our home purchase in Kiryat Bialik was invaluable.",
+      he: "מקצועי, אמין ותמיד זמין. הליווי האישי של עמית לאורך רכישת הבית שלנו בקרית ביאליק היה בלתי מוערך."
     },
     rating: 5,
     location: {
-      en: "Herzliya, Israel",
-      he: "הרצליה, ישראל"
+      en: "Kiryat Bialik, Israel",
+      he: "קרית ביאליק, ישראל"
     }
   }
 ];
