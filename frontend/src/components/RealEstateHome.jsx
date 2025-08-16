@@ -418,7 +418,7 @@ const RealEstateHome = () => {
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 {isRTL ? 'עמית נדל"ן' : 'Amit Real Estate'}. {t('All rights reserved')}</p>
+            <p>&copy; 2025 {isRTL ? 'עמית וולף | משווק נדל"ן' : 'Amit Wolf | Real Estate Marketer'}. {t('All rights reserved')}</p>
           </div>
         </div>
       </footer>
