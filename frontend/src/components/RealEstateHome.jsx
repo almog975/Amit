@@ -383,8 +383,8 @@ const RealEstateHome = () => {
               <div className={`flex items-center space-x-3 mb-4 ${isRTL ? 'space-x-reverse' : ''}`}>
                 <Home className="h-8 w-8 text-emerald-400" />
                 <div>
-                  <h3 className="text-xl font-bold">{isRTL ? 'עמית נדל"ן' : 'Amit Real Estate'}</h3>
-                  <p className="text-gray-400 text-sm">{mockAgent.title[language]}</p>
+                  <h3 className="text-xl font-bold">{isRTL ? 'עמית וולף | נדל"ן' : 'Amit Wolf | Real Estate'}</h3>
+                  <p className="text-gray-400 text-sm">{mockAgent.title[language]} • {isRTL ? `רישיון ${mockAgent.licenseNumber}` : `License ${mockAgent.licenseNumber}`}</p>
                 </div>
               </div>
               <p className="text-gray-400">{mockAgent.bio[language]}</p>
