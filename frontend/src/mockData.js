@@ -2,39 +2,39 @@ export const mockProperties = [
   {
     id: 1,
     title: {
-      en: "Modern Family Home",
-      he: "בית משפחתי מודרני"
+      en: "Sea View Apartment",
+      he: "דירה עם נוף לים"
     },
-    price: 2850000, // Convert to Israeli Shekels
+    price: 2850000,
     location: {
-      en: "Tel Aviv, Israel",
-      he: "תל אביב, ישראל"
+      en: "Kiryat Yam, Israel",
+      he: "קרית ים, ישראל"
     },
     bedrooms: 4,
-    bathrooms: 3,
-    sqft: 120, // Convert to meters squared
-    type: "house",
+    bathrooms: 2,
+    sqft: 110,
+    type: "condo",
     status: "for-sale",
     image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop",
     description: {
-      en: "Beautiful modern family home with updated kitchen and spacious backyard.",
-      he: "בית משפחתי מודרני ויפה עם מטבח מעודכן וחצר אחורית רחבה."
+      en: "Beautiful sea view apartment with modern renovations and balcony overlooking the Mediterranean.",
+      he: "דירה יפהפייה עם נוף לים, שיפוצים מודרניים ומרפסת המשקיפה אל הים התיכון."
     },
     features: {
-      en: ["Swimming Pool", "Modern Kitchen", "Parking", "Garden"],
-      he: ["בריכת שחייה", "מטבח מודרני", "חניה", "גינה"]
+      en: ["Sea View", "Renovated", "Parking", "Balcony"],
+      he: ["נוף לים", "משופצת", "חניה", "מרפסת"]
     }
   },
   {
     id: 2,
     title: {
-      en: "Downtown Luxury Condo",
-      he: "דירת יוקרה במרכז"
+      en: "Central Haifa Apartment",
+      he: "דירה במרכז חיפה"
     },
-    price: 1940000,
+    price: 2200000,
     location: {
-      en: "Jerusalem, Israel",
-      he: "ירושלים, ישראל"
+      en: "Hadar HaCarmel, Haifa",
+      he: "הדר הכרמל, חיפה"
     },
     bedrooms: 3,
     bathrooms: 2,
@@ -43,116 +43,116 @@ export const mockProperties = [
     status: "for-sale",
     image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=600&fit=crop",
     description: {
-      en: "Stunning luxury condo in the heart of downtown with city views.",
-      he: "דירת יוקרה מהממת בלב המרכז עם נוף לעיר."
+      en: "Spacious apartment in central Haifa with easy access to transportation and shopping.",
+      he: "דירה מרווחת במרכז חיפה עם נגישות קלה לתחבורה וקניות."
     },
     features: {
-      en: ["City View", "Concierge", "Gym", "Rooftop Terrace"],
-      he: ["נוף לעיר", "שירותי קונסיירז'", "חדר כושר", "מרפסת גג"]
+      en: ["Central Location", "Near Transportation", "Shopping Nearby", "Bright"],
+      he: ["מיקום מרכזי", "קרוב לתחבורה", "קניות בקרבת מקום", "מוארת"]
     }
   },
   {
     id: 3,
     title: {
-      en: "Charming Suburban Villa",
-      he: "וילה מקסימה בפרברים"
+      en: "Kiryat Bialik House",
+      he: "בית בקרית ביאליק"
     },
-    price: 2480000,
+    price: 3200000,
     location: {
-      en: "Herzliya, Israel",
-      he: "הרצליה, ישראל"
+      en: "Kiryat Bialik, Israel",
+      he: "קרית ביאליק, ישראל"
     },
     bedrooms: 5,
     bathrooms: 3,
-    sqft: 150,
+    sqft: 140,
     type: "house",
     status: "for-sale",
     image: "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800&h=600&fit=crop",
     description: {
-      en: "Charming villa in quiet neighborhood with beautiful landscaping.",
-      he: "וילה מקסימה בשכונה שקטה עם נוף יפהפה."
+      en: "Family house with garden in quiet Kiryat Bialik neighborhood, perfect for families.",
+      he: "בית משפחתי עם גינה בשכונה שקטה בקרית ביאליק, מושלם למשפחות."
     },
     features: {
-      en: ["Fireplace", "Walk-in Closet", "Patio", "Updated Appliances"],
-      he: ["אח", "חדר ארונות", "פטיו", "מכשירי חשמל מעודכנים"]
+      en: ["Private Garden", "Quiet Street", "Family Friendly", "Parking"],
+      he: ["גינה פרטית", "רחוב שקט", "ידידותי למשפחות", "חניה"]
     }
   },
   {
     id: 4,
     title: {
-      en: "Luxury Penthouse Suite",
-      he: "פנטהאוס יוקרה"
+      en: "Carmel Penthouse",
+      he: "פנטהאוס בכרמל"
     },
-    price: 4800000,
+    price: 4500000,
     location: {
-      en: "Netanya, Israel",
-      he: "נתניה, ישראל"
+      en: "Carmel, Haifa",
+      he: "הכרמל, חיפה"
     },
     bedrooms: 4,
     bathrooms: 3,
-    sqft: 180,
+    sqft: 160,
     type: "condo",
     status: "for-sale",
     image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&h=600&fit=crop",
     description: {
-      en: "Exclusive penthouse with panoramic sea views and premium finishes.",
-      he: "פנטהאוס בלעדי עם נוף פנורמי לים וגימורים יוקרתיים."
+      en: "Luxury penthouse on the Carmel with stunning views and premium finishes.",
+      he: "פנטהאוס יוקרתי בכרמל עם נוף מהמם וגימורים יוקרתיים."
     },
     features: {
-      en: ["Sea View", "Private Balcony", "Premium Finishes", "Parking"],
-      he: ["נוף לים", "מרפסת פרטית", "גימורים יוקרתיים", "חניה"]
+      en: ["Panoramic View", "Luxury Finishes", "Private Elevator", "Terrace"],
+      he: ["נוף פנורמי", "גימורים יוקרתיים", "מעלית פרטית", "מרפסת"]
     }
   },
   {
     id: 5,
     title: {
-      en: "Cozy Starter Home",
-      he: "בית חמוד להתחלה"
+      en: "Kiryat Motzkin Starter Home",
+      he: "בית להתחלה בקרית מוצקין"
     },
-    price: 1280000,
+    price: 1800000,
     location: {
-      en: "Haifa, Israel",
-      he: "חיפה, ישראל"
+      en: "Kiryat Motzkin, Israel",
+      he: "קרית מוצקין, ישראל"
     },
-    bedrooms: 2,
-    bathrooms: 1,
-    sqft: 65,
-    type: "house",
+    bedrooms: 3,
+    bathrooms: 2,
+    sqft: 75,
+    type: "condo",
     status: "for-sale",
     image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&h=600&fit=crop",
     description: {
-      en: "Perfect starter home with great potential in up-and-coming neighborhood.",
-      he: "בית מושלם להתחלה עם פוטנציאל גדול בשכונה מתפתחת."
+      en: "Perfect starter home in Kiryat Motzkin with great potential and good location.",
+      he: "בית מושלם להתחלה בקרית מוצקין עם פוטנציאל גדול ומיקום טוב."
     },
     features: {
-      en: ["Renovated Kitchen", "Parquet Floors", "Balcony", "Near Schools"],
-      he: ["מטבח משופץ", "רצפת פרקט", "מרפסת", "קרוב לבתי ספר"]
+      en: ["Good Investment", "Near Schools", "Public Transport", "Shopping Center"],
+      he: ["השקעה טובה", "קרוב לבתי ספר", "תחבורה ציבורית", "מרכז קניות"]
     }
   },
   {
     id: 6,
     title: {
-      en: "Executive Townhouse",
-      he: "בית עירוני יוקרתי"
+      en: "Nesher Family Villa",
+      he: "וילה משפחתית בנשר"
     },
-    price: 3560000,
+    price: 3800000,
     location: {
-      en: "Ramat Gan, Israel",
-      he: "רמת גן, ישראל"
+      en: "Nesher, Israel",
+      he: "נשר, ישראל"
     },
-    bedrooms: 4,
-    bathrooms: 3,
-    sqft: 140,
-    type: "townhouse",
+    bedrooms: 6,
+    bathrooms: 4,
+    sqft: 180,
+    type: "house",
     status: "for-sale",
     image: "https://images.unsplash.com/photo-1600047509358-9dc75507daeb?w=800&h=600&fit=crop",
     description: {
-      en: "Modern executive townhouse with high-end finishes and great location.",
-      he: "בית עירוני מנהלי מודרני עם גימורים יוקרתיים ומיקום מעולה."
+      en: "Spacious family villa in Nesher with large garden and mountain views.",
+      he: "וילה משפחתי מרווחת בנשר עם גינה גדולה ונוף להרים."
     },
     features: {
-      en: ["Attached Garage", "Modern Design", "Premium Appliances", "Private Garden"],
-      he: ["חניה צמודה", "עיצוב מודרני", "מכשירי חשמל יוקרתיים", "גינה פרטית"]
+      en: ["Mountain View", "Large Garden", "Swimming Pool", "Garage"],
+      he: ["נוף להרים", "גינה גדולה", "בריכת שחייה", "מוסך"]
     }
   }
 ];
