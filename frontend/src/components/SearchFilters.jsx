@@ -36,7 +36,7 @@ const SearchFilters = ({ filters, onFiltersChange, onSearch, onClear }) => {
                 <SelectValue placeholder="Property Type" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">All Types</SelectItem>
+                <SelectItem value="all">All Types</SelectItem>
                 <SelectItem value="house">House</SelectItem>
                 <SelectItem value="condo">Condo</SelectItem>
                 <SelectItem value="townhouse">Townhouse</SelectItem>
