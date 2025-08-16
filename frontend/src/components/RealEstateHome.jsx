@@ -174,8 +174,11 @@ const RealEstateHome = () => {
                     <div className="w-24 h-24 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
                       <Users className="h-12 w-12 text-emerald-600" />
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-900">{mockAgent.name}</h3>
+                    <h3 className="text-xl font-semibold text-gray-900">{isRTL ? mockAgent.name : mockAgent.englishName}</h3>
                     <p className="text-gray-600">{mockAgent.title[language]}</p>
+                    <p className="text-sm text-emerald-600 font-medium">
+                      {isRTL ? `רישיון מס' ${mockAgent.licenseNumber}` : `License #${mockAgent.licenseNumber}`}
+                    </p>
                   </div>
                   
                   <div className="space-y-3 text-sm">
