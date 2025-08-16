@@ -76,7 +76,7 @@ const SearchFilters = ({ filters, onFiltersChange, onSearch, onClear }) => {
                 <SelectValue placeholder="Price Range" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">Any Price</SelectItem>
+                <SelectItem value="any">Any Price</SelectItem>
                 <SelectItem value="0-300000">Under $300K</SelectItem>
                 <SelectItem value="300000-500000">$300K - $500K</SelectItem>
                 <SelectItem value="500000-750000">$500K - $750K</SelectItem>
